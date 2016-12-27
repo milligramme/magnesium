@@ -1,0 +1,30 @@
+{{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+{{ $currentPageNumber := .Paginator.PageNumber }}
+{{ $prev := "fa fa-angle-left"}}
+{{ $next := "fa fa-angle-right"}}
+{{ $first := "fa fa-angle-double-left"}}
+{{ $last := "fa fa-angle-double-right"}}
+<nav class="pagination" role="pagination">
+  {{ if .Paginator.HasPrev }}
+  <a href="{{ .Paginator.First.URL }}"><i class="{{ $first }}"></i></a>
+  <a href="{{ .Paginator.Prev.URL }}"><i class="{{ $prev }}"></i></a>
+  {{ else }}
+  <i class="{{ $first }}"></i>
+  <i class="{{ $prev }}"></i>
+  {{ end }}
+  {{ range $page := .Paginator.Pagers }}
+    {{ if eq $page.PageNumber $currentPageNumber }}
+      <span class="current-page">{{ $page.PageNumber }}</span>
+    {{ else }}
+      <span><a href="{{ $page.URL }}">{{ $page.PageNumber }}</a></span>
+    {{ end }}
+  {{ end }}
+  {{ if .Paginator.HasNext }}
+  <a href="{{ .Paginator.Next.URL }}"><i class="{{ $next }}"></i></a>
+  <a href="{{ .Paginator.Last.URL }}"><i class="{{ $last }}"></i></a>
+  {{ else }}
+  <i class="{{ $next }}"></i>
+  <i class="{{ $last }}"></i>
+  {{ end }}
+</nav>
+{{ end }}

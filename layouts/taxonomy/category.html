@@ -1,0 +1,32 @@
+{{ partial "header" . }}
+
+<header>
+  <h1>
+    <i class="fa fa-folder-open-o fa-fw"></i>
+    {{ .Title }}
+  </h1>
+</header>
+
+<div class="pure-g">
+  <div id="content-main" class="pure-u-1 pure-u-lg-4-5">
+    
+    {{ range ( .Paginate (where .Data.Pages "Type" "post")).Pages }}
+      {{ .Render "summary" }}
+    {{ end }}
+    {{ partial "pagination" . }}
+    
+  </div>
+  <div id="content-side" class="pure-u-1 pure-u-lg-1-5">
+    {{ partial "social" .}}
+    {{ with .Site.Params.adsense.responsive1 }}
+      {{ partial  . }}
+    {{ end }}
+  </div>
+  <div id="content-bottom" class="pure-u-1 pure-u-lg-1">
+    {{ with .Site.Params.adsense.responsive2 }}
+      {{ partial  . }}
+    {{ end }}
+  </div>
+</div>
+
+{{ partial "footer" . }}

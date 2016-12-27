@@ -1,0 +1,94 @@
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+title = "Magnesium Demo"
+languageCode = "en-us"
+theme = "magnesium"
+
+copyright = "&copy; 2016. All rights reserved."
+canonifyurls = true
+paginate = 3
+
+googleAnalytics = "Your Google Analytics tracking ID"
+disqusShortname = "Your Disqus Shortname"
+
+
+[params]
+  author = "milligramme"
+
+  # Shown in the home page
+  subtitle = "Subtitle"
+  brand = "🔥:magnesium"
+  # CSS name for highlight.js https://highlightjs.org/static/demo/
+  highlightjs = "atom-one-light"
+  dateFormat = "2006-01-02 15:04"
+
+  [params.dev]
+    # Local working dir to edit with [TextMate](https://macromates.com/)
+    # This works under Development Mode.(env HUGO_ENV=DEV)
+    # workingdir = "/path/to/hugo/content"
+
+  [params.social]
+    twitter = "#"
+    facebook = "#"
+    googleplus = "#"
+    tumblr = "www"
+    pinterest = "#"
+    stackoverflow = "#"
+    github = "#"
+    bitbucket = "#"
+    gitlab = "#"
+    instagram = "#"
+    flickr = "#"
+    linkedin = "#"
+    vimeo = "#"
+    soundcloud = "#"
+    lastfm = "#"
+    youtube = "#"
+    pinboard = "pinboard"
+    slideshare = "#"
+    speakerdeck = "#"
+    amazon = "amzn.asia/#"
+  
+  [params.adsense]
+    # optional
+    # add these html-files in <your_blog_root>/layouts/partials/adsense
+    # mobile_anchor = "adsense/mobile_anchor_adv"
+    # responsive1 = "adsense/responsive_adv1"
+    # responsive2 = "adsense/responsive_adv2"
+
+
+[indexes]
+  tag = "tags"
+  category = "categories"
+  
+  
+[menu]
+  [[menu.main]]
+    name = "home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 0
+    identifier = "home"
+    url = "/"
+  [[menu.main]]
+    name = "posts"
+    pre = "<i class='fa fa-file-text-o fa-fw'></i>"
+    weight = 1
+    identifier = "post"
+    url = "/post/"
+  [[menu.main]]
+    name = "tags"
+    pre = "<i class='fa fa-tags fa-fw'></i>"
+    weight = 2
+    identifier = "tags"
+    url = "/tags/"
+  [[menu.main]]
+    name = "categories"
+    pre = "<i class='fa fa-folder-o fa-fw'></i>"
+    weight = 2
+    identifier = "categories"
+    url = "/categories/"
+  [[menu.main]]
+    name = "about"
+    pre = "<i class='fa fa-smile-o fa-fw'></i>"
+    weight = 3
+    identifier = "about"
+    url = "/about/"

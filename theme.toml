@@ -1,0 +1,12 @@
+name = "Magnesium"
+license = "MIT"
+licenselink = "https://github.com/milligramme/magnesium/blob/master/LICENSE"
+description = "minimal blog theme"
+homepage = "https://github.com/milligramme/magnesium"
+tags = ["blog", "responsive"]
+features = ["blog", "responsive", "search", "syntax-highlight"]
+min_version = 0.17
+
+[author]
+  name = "milligramme"
+  homepage = "https://github.com/milligramme"

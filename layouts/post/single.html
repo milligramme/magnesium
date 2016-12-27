@@ -1,0 +1,40 @@
+{{ partial "header" . }}
+
+<div class="pure-g">
+  <div id="content-main" class="pure-u-1 pure-u-lg-4-5">
+
+    {{ partial "post_meta" . }}
+
+    <header>
+      <h1>
+        {{ .Title }}
+        {{ if eq (getenv "HUGO_ENV") "DEV" }}
+          {{ if .IsDraft }}<i class="fa fa-exclamation-triangle fa-fw draft"></i><span class="small-print draft">draft</span>{{ end }}
+          {{ partial "tm_edit" . }}
+        {{ end }}
+      </h1>
+      {{ partial "outdated" . }}
+      <h2>{{ .Description }}</h2>
+    </header>
+    
+    <div id="content">
+      {{ .Content }}
+    </div>
+    {{ partial "prev_next_post" . }}
+
+    {{ template "_internal/disqus.html" . }}
+  </div>
+  <div id="content-side" class="pure-u-1 pure-u-lg-1-5">
+    {{ partial "social" .}}
+    {{ with .Site.Params.adsense.responsive1 }}
+      {{ partial  . }}
+    {{ end }}
+  </div>
+  <div id="content-bottom" class="pure-u-1 pure-u-lg-1">
+    {{ with .Site.Params.adsense.responsive2 }}
+      {{ partial  . }}
+    {{ end }}
+  </div>
+</div>
+{{ partial "footer" . }}
+

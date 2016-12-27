@@ -1,0 +1,53 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="{{ .Hugo.Generator }}" />
+  <meta content='IE=edge;chrome=1' http-equiv='X-UA-Compatible'>
+  <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport'>
+  <meta content='milligramme.github.io' name='apple-mobile-web-app-title'>
+  <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="author" content="{{ .Site.Params.author }}">
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@github" />
+  <meta name="twitter:title" content="{{ .Site.Title }}" />
+  <meta name="twitter:description" content="{{ .Site.Params.description }}" />
+  <link rel="stylesheet" href="/css/normalize.css">
+  {{"<!-- Pure -->" | safeHTML }}{{ $purecss := "https://unpkg.com/purecss@0.6.1/build/" }}
+  <link rel="stylesheet" href="{{ $purecss }}pure-min.css"
+    integrity="sha384-CCTZv2q9I9m3UOxRLaJneXrrqKwUNOzZ6NGEUMwHtShDJ+nCoiXJCAgi05KfkLGY"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ $purecss }}grids-responsive-min.css">
+  
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="{{ $purecss }}/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="{{ $purecss }}/grids-responsive-min.css">
+  <!--<![endif]-->
+  
+  {{"<!-- Google Fonts -->" | safeHTML }}
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+  {{"<!-- Font Awesome -->" | safeHTML }}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/magnesium.css">
+  <link rel="stylesheet" href="/css/search.css">
+  {{"<!-- jQuery -->" | safeHTML }}
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+  {{"<!-- highlight.js -->" | safeHTML }}{{ with .Site.Params.highlightjs }}
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/{{ . }}.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/languages/go.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/languages/applescript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/languages/processing.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/languages/scss.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/languages/haml.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  {{ end }}
+  <link href='/favicon.png' rel='icon' type='image/png'>
+  <link href='/favicon.png' rel='shortcut icon' type='image/png'>
+  <link href='/apple-touch-icon-precomposed.png' rel='apple-touch-icon-precomposed'>
+</head>

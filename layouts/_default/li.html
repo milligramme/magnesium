@@ -1,0 +1,25 @@
+<li class="pure-menu-item">
+  <div class="pure-g">
+    <div class="list-time pure-u-1 pure-u-sm-1-4 pure-u-md-5-24">
+      <time>
+        {{ with .Site.Params.dateFormat }}
+        {{ $.Date.Format . }}
+        {{ else }}
+        {{ .Date.Format "02 Jan 2006, 15:04" }}
+        {{ end }}
+      </time>
+    </div>
+    <div class="pure-u-1 pure-u-sm-3-4 pure-u-md-19-24">
+      {{ if eq (getenv "HUGO_ENV") "DEV" }}
+        {{ if .IsDraft }}<i class="fa fa-exclamation-triangle fa-fw draft"></i>{{ end }}
+      {{ end }}
+      <a href="{{ .Permalink }}">
+        {{ .Title }}
+      </a>
+      {{ if .Params.outdated }}
+        <i class="fa fa-exclamation-circle fa-fw draft">&nbsp;outdated</i>
+      {{ end }}
+      
+    </div>
+  </div>
+</li>

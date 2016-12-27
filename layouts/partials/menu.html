@@ -1,0 +1,38 @@
+<div class="pure-g">
+  <div class="pure-u-1 pure-u-sm-1 pure-u-md-7-12" >
+    <div id="menu" class="pure-menu pure-menu-horizontal pure-menu-scrollable">
+      <ul class="pure-menu-list">
+        {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+          <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+            <a class="pure-menu-link" href="#">{{ .Pre }}{{ .Name }}</a>
+            <ul class="pure-menu-children">
+              {{ range .Children }}
+              <li class="pure-menu-item">
+                <a href="{{ .URL }}">{{ .Name }}</a>
+              </li>
+              {{ end }}
+            </ul>
+        {{else}}
+          <li class="pure-menu-item">
+            <a class="pure-menu-link" href="{{ .URL }}">{{ .Pre }}{{ .Name }}</a>
+        {{end}}
+          </li>
+        {{end}}
+      </ul>
+    </div>
+  </div>
+  <div class="pure-u-1 pure-u-sm-1 pure-u-md-5-12">
+    <div id="search" class="pure-menu pure-menu-horizontal pure-menu-scrollable">
+      <ul class="pure-menu-list">
+          <li class="pure-menu-item">
+            <div class="pure-form">
+              <input type="text" class="pure-input" id="q" onkeyup="do_find(this.value)" onkeydown="key(event.keyCode)" autocomplete="off" placeholder="&#xF002; Search ...">
+              <span id="stat"></span>
+            </form>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
+

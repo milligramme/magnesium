@@ -1,0 +1,18 @@
+  
+  </div>
+
+  <script src="/index.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/search.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/magnesium.js" type="text/javascript" charset="utf-8"></script>
+  <footer>
+    {{ if ne (getenv "HUGO_ENV") "DEV" }}
+      {{ template "_internal/google_analytics.html" . }}
+    {{ end }}
+    {{ partial "copyright" . }}
+  </footer>
+  {{ with .Site.Params.adsense.mobile_anchor }}
+    {{ partial . }}
+  {{ end }}
+  {{ partial "rewinder" . }}
+</body>
+</html>

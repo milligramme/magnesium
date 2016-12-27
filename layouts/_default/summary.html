@@ -1,0 +1,24 @@
+<article>
+  <header>
+    {{ partial "post_meta.html" . }}
+    <h2 class="summary">
+      {{ if eq (getenv "HUGO_ENV") "DEV" }}
+        {{ if .IsDraft }}<i class="fa fa-exclamation-circle fa-fw draft"></i>{{ end }}
+      {{ end }}
+      
+      <a href="{{ .Permalink }}">
+        {{ .Title }}
+      </a>
+    </h2>
+  </ul>
+  </header>
+
+  <p class="summary">
+    {{ .Summary }}
+  </p>
+  <footer>
+    {{ if .Truncated }}
+    <a href="{{ .RelPermalink }}">read more...</a>
+    {{ end }}
+  </footer>
+</article>
