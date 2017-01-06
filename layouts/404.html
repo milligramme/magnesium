@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>404</title>
-</head>
-<body>
-  <h1>404</h1>
+{{ partial "header" . }}
 
-  
-</body>
-</html>
+<section id="main">
+  <div>
+   <h1 id="title">{{ .Title }}</h1>
+   <p>
+     Please go <i class="fa fa-home fa-fw"></i> home or use keyword <i class="fa fa-search fa-fw"></i> search.
+   </p>
+   
+  </div>
+</section>
+
+{{ partial "footer" . }}
