@@ -15,12 +15,14 @@
         {{ $data := .Data }}
         {{ range $key, $value := .Data.Terms.ByCount }}
           <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3">
+            {{ if ($value.Name | len) ne 0 }}
             <li class="pure-menu-item">
               <a href="{{ $value.Name | urlize }}">
                 <i class="fa fa-tag fa-fw"></i>{{ $value.Name }}
               </a>
               <span>&#40;{{ $value.Count }}&#41;</span>
             </li>
+            {{ end }}
           </div>
         {{ end }}
       </div>
