@@ -12,10 +12,8 @@
   <meta name="twitter:title" content="{{ .Site.Title }}" />
   <meta name="twitter:description" content="{{ .Site.Params.description }}" />
   <link rel="stylesheet" href="/css/normalize.css">
-  {{"<!-- Pure -->" | safeHTML }}{{ $purecss := "https://unpkg.com/purecss@0.6.1/build/" }}
-  <link rel="stylesheet" href="{{ $purecss }}pure-min.css"
-    integrity="sha384-CCTZv2q9I9m3UOxRLaJneXrrqKwUNOzZ6NGEUMwHtShDJ+nCoiXJCAgi05KfkLGY"
-    crossorigin="anonymous">
+  {{"<!-- Pure -->" | safeHTML }}{{ $purecss := "https://unpkg.com/purecss@0.6.2/build/" }}
+  <link rel="stylesheet" href="{{ $purecss }}pure-min.css">
   <link rel="stylesheet" href="{{ $purecss }}grids-responsive-min.css">
   
   <!--[if lte IE 8]>
