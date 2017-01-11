@@ -1,0 +1,44 @@
+/*
+  navi
+*/
+#navi {
+	margin: .5rem 0;
+	line-height: 2.5rem;
+}
+#navi span{
+	border:1px solid hsl(0, 0%, 80%);
+  padding: 0.5rem 0.4rem;
+	cursor:pointer;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-line !important;
+}
+#navi span.selected{
+	background-color: hsl(320, 60%, 80%);
+}
+
+dd {
+  color: hsl(0, 0%, 40%);
+	margin: 0;
+	padding: 0 0 1em 1.5em;
+  width: 90%;
+}
+dd span {
+	font-size: .9em;
+	color: hsl(0, 0%, 60%);
+}
+dd b {
+	color: hsl(60, 10%, 20%);
+	font-weight: 700;
+	margin:0 2px 0 2px;
+	padding:0 2px 0 2px;
+	background-color: hsl(320, 60%, 80%);
+	border: 1px solid hsl(320, 60%, 70%);
+}
+
+
+@media (max-width: 15em) {
+	#navi{
+		width:300px;
+	}
+}

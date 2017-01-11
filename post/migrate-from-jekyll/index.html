@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="" />
+  <meta content='IE=edge;chrome=1' http-equiv='X-UA-Compatible'>
+  <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport'>
+  <meta content='milligramme.github.io' name='apple-mobile-web-app-title'>
+  <title>Migrate to Hugo from Jekyll | Magnesium Demo</title>
+  <meta name="author" content="milligramme">
+  <meta name="description" content="">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@github" />
+  <meta name="twitter:title" content="Magnesium Demo" />
+  <meta name="twitter:description" content="" />
+  <link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/normalize.css">
+  <!-- Pure -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+  
+  
+  
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build//grids-responsive-min.css">
+  
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/magnesium.css">
+  <link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/search.css">
+  <!-- jQuery -->
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+  <!-- highlight.js -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/atom-one-light.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/languages/go.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/languages/applescript.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/languages/processing.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/languages/scss.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/languages/haml.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  <link href='http://replace-this-with-your-hugo-site.com/favicon.png' rel='icon' type='image/png'>
+  <link href='http://replace-this-with-your-hugo-site.com/favicon.png' rel='shortcut icon' type='image/png'>
+  <link href='http://replace-this-with-your-hugo-site.com/apple-touch-icon-precomposed.png' rel='apple-touch-icon-precomposed'>
+</head>
+
+<body>
+<div class="pure-u-1 pure-u-sm-1 pure-u-md-1">
+  <div id="brand" class="pure-menu pure-menu-horizontal pure-menu-scrollable">
+    
+      <a class="pure-menu-link brand" href="http://replace-this-with-your-hugo-site.com/">🔥:magnesium</a>
+    
+  </div>
+</div>
+
+<div id="layout">
+  <div class="pure-g">
+  <div class="pure-u-1 pure-u-sm-1 pure-u-md-7-12" >
+    <div id="menu" class="pure-menu pure-menu-horizontal pure-menu-scrollable">
+      <ul class="pure-menu-list">
+        
+        
+          <li class="pure-menu-item">
+            <a class="pure-menu-link" href="http://replace-this-with-your-hugo-site.com/"><i class='fa fa-home fa-fw'></i>home</a>
+        
+          </li>
+        
+        
+          <li class="pure-menu-item">
+            <a class="pure-menu-link" href="http://replace-this-with-your-hugo-site.com/post/"><i class='fa fa-file-text-o fa-fw'></i>posts</a>
+        
+          </li>
+        
+        
+          <li class="pure-menu-item">
+            <a class="pure-menu-link" href="http://replace-this-with-your-hugo-site.com/categories/"><i class='fa fa-folder-o fa-fw'></i>categories</a>
+        
+          </li>
+        
+        
+          <li class="pure-menu-item">
+            <a class="pure-menu-link" href="http://replace-this-with-your-hugo-site.com/tags/"><i class='fa fa-tags fa-fw'></i>tags</a>
+        
+          </li>
+        
+        
+          <li class="pure-menu-item">
+            <a class="pure-menu-link" href="http://replace-this-with-your-hugo-site.com/about/"><i class='fa fa-smile-o fa-fw'></i>about</a>
+        
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+  <div class="pure-u-1 pure-u-sm-1 pure-u-md-5-12">
+    <div id="search" class="pure-menu pure-menu-horizontal pure-menu-scrollable">
+      <ul class="pure-menu-list">
+          <li class="pure-menu-item">
+            <div class="pure-form">
+              <input type="text" class="pure-input" id="q" onkeyup="do_find(this.value)" onkeydown="key(event.keyCode)" autocomplete="off" placeholder="&#xF002; Search ...">
+              <span id="stat"></span>
+            </form>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <div class="search-results">
+  <div id="navi"></div>
+  <div id="result"></div>
+</div>
+
+
+
+
+<div class="pure-g">
+  <div id="content-main" class="pure-u-1 pure-u-lg-4-5">
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-clock-o fa-fw"></i>
+    <time>
+      
+        2014-03-10 00:00
+      
+    </time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+    <header>
+      <h1>
+        Migrate to Hugo from Jekyll
+        
+      </h1>
+      
+      <h2></h2>
+    </header>
+    
+    <div id="content">
+      
+
+<h2 id="move-static-content-to-static">Move static content to <code>static</code></h2>
+
+<p>Jekyll has a rule that any directory not starting with <code>_</code> will be copied as-is to the <code>_site</code> output. Hugo keeps all static content under <code>static</code>. You should therefore move it all there.
+With Jekyll, something that looked like</p>
+
+<pre><code>▾ &lt;root&gt;/
+    ▾ images/
+        logo.png
+</code></pre>
+
+<p>should become</p>
+
+<pre><code>▾ &lt;root&gt;/
+    ▾ static/
+        ▾ images/
+            logo.png
+</code></pre>
+
+<p>Additionally, you&rsquo;ll want any files that should reside at the root (such as <code>CNAME</code>) to be moved to <code>static</code>.</p>
+
+<h2 id="create-your-hugo-configuration-file">Create your Hugo configuration file</h2>
+
+<p>Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the <a href="http://replace-this-with-your-hugo-site.com/overview/configuration/">Hugo configuration documentation</a> for details.</p>
+
+<h2 id="set-your-configuration-publish-folder-to-site">Set your configuration publish folder to <code>_site</code></h2>
+
+<p>The default is for Jekyll to publish to <code>_site</code> and for Hugo to publish to <code>public</code>. If, like me, you have <a href="http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html"><code>_site</code> mapped to a git submodule on the <code>gh-pages</code> branch</a>, you&rsquo;ll want to do one of two alternatives:</p>
+
+<ol>
+<li><p>Change your submodule to point to map <code>gh-pages</code> to public instead of <code>_site</code> (recommended).</p>
+
+<pre><code>git submodule deinit _site
+git rm _site
+git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
+</code></pre></li>
+
+<li><p>Or, change the Hugo configuration to use <code>_site</code> instead of <code>public</code>.</p>
+
+<pre><code>{
+    ..
+    &quot;publishdir&quot;: &quot;_site&quot;,
+    ..
+}
+</code></pre></li>
+</ol>
+
+<h2 id="convert-jekyll-templates-to-hugo-templates">Convert Jekyll templates to Hugo templates</h2>
+
+<p>That&rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to <a href="http://jekyllrb.com/docs/templates/">Jekyll&rsquo;s template documentation</a> if you need to refresh your memory on how you built your blog and <a href="http://replace-this-with-your-hugo-site.com/layout/templates/">Hugo&rsquo;s template</a> to learn Hugo&rsquo;s way.</p>
+
+<p>As a single reference data point, converting my templates for <a href="http://heyitsalex.net/">heyitsalex.net</a> took me no more than a few hours.</p>
+
+<h2 id="convert-jekyll-plugins-to-hugo-shortcodes">Convert Jekyll plugins to Hugo shortcodes</h2>
+
+<p>Jekyll has <a href="http://jekyllrb.com/docs/plugins/">plugins</a>; Hugo has <a href="http://replace-this-with-your-hugo-site.com/doc/shortcodes/">shortcodes</a>. It&rsquo;s fairly trivial to do a port.</p>
+
+<h3 id="implementation">Implementation</h3>
+
+<p>As an example, I was using a custom <a href="https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb"><code>image_tag</code></a> plugin to generate figures with caption when running Jekyll. As I read about shortcodes, I found Hugo had a nice built-in shortcode that does exactly the same thing.</p>
+
+<p>Jekyll&rsquo;s plugin:</p>
+
+<pre><code>module Jekyll
+  class ImageTag &lt; Liquid::Tag
+    @url = nil
+    @caption = nil
+    @class = nil
+    @link = nil
+    // Patterns
+    IMAGE_URL_WITH_CLASS_AND_CAPTION =
+    IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK = /(\w+)(\s+)((https?:\/\/|\/)(\S+))(\s+)&quot;(.*?)&quot;(\s+)-&gt;((https?:\/\/|\/)(\S+))(\s*)/i
+    IMAGE_URL_WITH_CAPTION = /((https?:\/\/|\/)(\S+))(\s+)&quot;(.*?)&quot;/i
+    IMAGE_URL_WITH_CLASS = /(\w+)(\s+)((https?:\/\/|\/)(\S+))/i
+    IMAGE_URL = /((https?:\/\/|\/)(\S+))/i
+    def initialize(tag_name, markup, tokens)
+      super
+      if markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK
+        @class   = $1
+        @url     = $3
+        @caption = $7
+        @link = $9
+      elsif markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION
+        @class   = $1
+        @url     = $3
+        @caption = $7
+      elsif markup =~ IMAGE_URL_WITH_CAPTION
+        @url     = $1
+        @caption = $5
+      elsif markup =~ IMAGE_URL_WITH_CLASS
+        @class = $1
+        @url   = $3
+      elsif markup =~ IMAGE_URL
+        @url = $1
+      end
+    end
+    def render(context)
+      if @class
+        source = &quot;&lt;figure class='#{@class}'&gt;&quot;
+      else
+        source = &quot;&lt;figure&gt;&quot;
+      end
+      if @link
+        source += &quot;&lt;a href=\&quot;#{@link}\&quot;&gt;&quot;
+      end
+      source += &quot;&lt;img src=\&quot;#{@url}\&quot;&gt;&quot;
+      if @link
+        source += &quot;&lt;/a&gt;&quot;
+      end
+      source += &quot;&lt;figcaption&gt;#{@caption}&lt;/figcaption&gt;&quot; if @caption
+      source += &quot;&lt;/figure&gt;&quot;
+      source
+    end
+  end
+end
+Liquid::Template.register_tag('image', Jekyll::ImageTag)
+</code></pre>
+
+<p>is written as this Hugo shortcode:</p>
+
+<pre><code>&lt;!-- image --&gt;
+&lt;figure {{ with .Get &quot;class&quot; }}class=&quot;{{.}}&quot;{{ end }}&gt;
+    {{ with .Get &quot;link&quot;}}&lt;a href=&quot;{{.}}&quot;&gt;{{ end }}
+        &lt;img src=&quot;{{ .Get &quot;src&quot; }}&quot; {{ if or (.Get &quot;alt&quot;) (.Get &quot;caption&quot;) }}alt=&quot;{{ with .Get &quot;alt&quot;}}{{.}}{{else}}{{ .Get &quot;caption&quot; }}{{ end }}&quot;{{ end }} /&gt;
+    {{ if .Get &quot;link&quot;}}&lt;/a&gt;{{ end }}
+    {{ if or (or (.Get &quot;title&quot;) (.Get &quot;caption&quot;)) (.Get &quot;attr&quot;)}}
+    &lt;figcaption&gt;{{ if isset .Params &quot;title&quot; }}
+        {{ .Get &quot;title&quot; }}{{ end }}
+        {{ if or (.Get &quot;caption&quot;) (.Get &quot;attr&quot;)}}&lt;p&gt;
+        {{ .Get &quot;caption&quot; }}
+        {{ with .Get &quot;attrlink&quot;}}&lt;a href=&quot;{{.}}&quot;&gt; {{ end }}
+            {{ .Get &quot;attr&quot; }}
+        {{ if .Get &quot;attrlink&quot;}}&lt;/a&gt; {{ end }}
+        &lt;/p&gt; {{ end }}
+    &lt;/figcaption&gt;
+    {{ end }}
+&lt;/figure&gt;
+&lt;!-- image --&gt;
+</code></pre>
+
+<h3 id="usage">Usage</h3>
+
+<p>I simply changed:</p>
+
+<pre><code>{% image full http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg &quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were &quot;having fun&quot; and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&quot; -&gt;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/ %}
+</code></pre>
+
+<p>to this (this example uses a slightly extended version named <code>fig</code>, different than the built-in <code>figure</code>):</p>
+
+<pre><code>{{% fig class=&quot;full&quot; src=&quot;http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg&quot; title=&quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were having fun and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&quot; link=&quot;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/&quot; %}}
+</code></pre>
+
+<p>As a bonus, the shortcode named parameters are, arguably, more readable.</p>
+
+<h2 id="finishing-touches">Finishing touches</h2>
+
+<h3 id="fix-content">Fix content</h3>
+
+<p>Depending on the amount of customization that was done with each post with Jekyll, this step will require more or less effort. There are no hard and fast rules here except that <code>hugo server --watch</code> is your friend. Test your changes and fix errors as needed.</p>
+
+<h3 id="clean-up">Clean up</h3>
+
+<p>You&rsquo;ll want to remove the Jekyll configuration at this point. If you have anything else that isn&rsquo;t used, delete it.</p>
+
+<h2 id="a-practical-example-in-a-diff">A practical example in a diff</h2>
+
+<p><a href="http://heyitsalex.net/">Hey, it&rsquo;s Alex</a> was migrated in less than a <em>father-with-kids day</em> from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this <a href="https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610">diff</a>.</p>
+
+    </div>
+    
+
+
+<div class="post-prev-next pure-g">
+  <div class="pure-u-1 pure-u-md-1-24" style="text-align: left;">
+    
+  </div>
+  <div class="pure-u-1 pure-u-md-10-24">
+    
+  </div>
+  <div class="pure-u-1 pure-u-md-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-1 pure-u-md-10-24">
+    
+    <nav class="next">
+      <a href="http://replace-this-with-your-hugo-site.com/post/creating-a-new-theme/">Creating a New Theme</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1 pure-u-md-1-24" style="text-align: right;">
+    
+    <a href="http://replace-this-with-your-hugo-site.com/post/creating-a-new-theme/"><i class="fa fa-angle-double-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'Your Disqus Shortname';
+    var disqus_identifier = 'http:\/\/replace-this-with-your-hugo-site.com\/post\/migrate-from-jekyll\/';
+    var disqus_title = 'Migrate to Hugo from Jekyll';
+    var disqus_url = 'http:\/\/replace-this-with-your-hugo-site.com\/post\/migrate-from-jekyll\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+  <div id="content-side" class="pure-u-1 pure-u-lg-1-5">
+    <div id="social" class="pure-g">
+  
+    <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1">
+      <a href="https://twitter.com/#" target="_blank">
+        <i class="fa fa-twitter fa-fw"></i>twitter
+      </a>
+    </div>
+  
+  
+  
+    <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1">
+      <a href="https://facebook.com/#" target="_blank">
+        <i class="fa fa-facebook fa-fw"></i>facebook
+      </a>
+    </div>
+  
+  
+  
+    <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1">
+      <a href="https://plus.google.com/#" target="_blank">
+        <i class="fa fa-google-plus fa-fw"></i>google-plus
+      </a>
+    </div>
+  
+  
+  
+    <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1">
+      <a href="https://github.com/#" target="_blank">
+        <i class="fa fa-github-alt fa-fw"></i>github
+      </a>
+    </div>
+  
+  
+  
+    <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1">
+      <a href="http://stackoverflow.com/users/#" target="_blank">
+        <i class="fa fa-stack-overflow fa-fw"></i>stackoverflow
+      </a>
+    </div>
+  
+  
+  
+    <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1">
+      <a href="https://bitbucket.org/#" target="_blank">
+        <i class="fa fa-bitbucket fa-fw"></i>bitbucket
+      </a>
+    </div>
+  
+  
+  
+    <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1">
+      <a href="https://gitlab.com/#" target="_blank">
+        <i class="fa fa-gitlab fa-fw"></i>gitlab
+      </a>
+    </div>
+  
+  
+  
+    <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1">
+      <a href="https://www.tumblr.com/" target="_blank">
+        <i class="fa fa-tumblr fa-fw"></i>tumblr
+      </a>
+    </div>
+  
+  
+  
+    <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1">
+      <a href="https://www.pinterest.com/#" target="_blank">
+        <i class="fa fa-pinterest fa-fw"></i>pinterest
+      </a>
+    </div>
+  
+  
+  
+    <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1">
+      <a href="https://www.instagram.com/#" target="_blank">
+        <i class="fa fa-instagram fa-fw"></i>instagram
+      </a>
+    </div>
+  
+  
+  
+    <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1">
+      <a href="https://www.flickr.com/photos/#" target="_blank">
+        <i class="fa fa-flickr fa-fw"></i>flickr
+      </a>
+    </div>
+  
+  
+  
+    <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1">
+      <a href="https://linkedin.com/in/#" target="_blank">
+        <i class="fa fa-linkedin fa-fw"></i>linkedin
+      </a>
+    </div>
+  
+  
+  
+    <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1">
+      <a href="https://vimeo.com/#" target="_blank">
+        <i class="fa fa-vimeo fa-fw"></i>vimeo
+      </a>
+    </div>
+  
+  
+  
+    <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1">
+      <a href="https://soundcloud.com/#" target="_blank">
+        <i class="fa fa-soundcloud fa-fw"></i>soundcloud
+      </a>
+    </div>
+  
+  
+  
+    <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1">
+      <a href="http://www.last.fm/user/#" target="_blank">
+        <i class="fa fa-lastfm fa-fw"></i>lastfm
+      </a>
+    </div>
+  
+  
+  
+    <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1">
+      <a href="https://youtube.com/user/#" target="_blank">
+        <i class="fa fa-youtube fa-fw"></i>youtube
+      </a>
+    </div>
+  
+  
+  
+    <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1">
+      <a href="https://pinboard.in/u:pinboard" target="_blank">
+        <i class="fa fa-bookmark fa-fw"></i>pinboard
+      </a>
+    </div>
+  
+  
+  
+    <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1">
+      <a href="https://speakerdeck.com/#" target="_blank">
+        <i class="fa fa-github-square fa-fw"></i>speakerdeck
+      </a>
+    </div>
+  
+  
+  
+    <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1">
+      <a href="http://www.slideshare.net/#" target="_blank">
+        <i class="fa fa-slideshare fa-fw"></i>slideshare
+      </a>
+    </div>
+  
+  
+  
+    <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1">
+      <a href="http://amzn.asia/#" target="_blank">
+        <i class="fa fa-amazon fa-fw"></i>amazon wishlist
+      </a>
+    </div>
+  
+  
+
+</div>
+    
+  </div>
+  <div id="content-bottom" class="pure-u-1 pure-u-lg-1">
+    
+  </div>
+</div>
+  
+  </div>
+
+  <script src="http://replace-this-with-your-hugo-site.com/index.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://replace-this-with-your-hugo-site.com/js/search.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://replace-this-with-your-hugo-site.com/js/magnesium.js" type="text/javascript" charset="utf-8"></script>
+  <footer>
+    
+      
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'Your Google Analytics tracking ID', 'auto');
+ga('send', 'pageview');
+</script>
+
+    
+    <div id="copyrights">
+  &copy; 2016. All rights reserved.<br/>
+  Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a>
+  Theme&nbsp;<a href="https://github.com/milligramme/magnesium" target="_blank">magnesium</a>
+  <a href="https://github.com/milligramme/magnesium"><i class="fa fa-github fa-fw"></i></a>
+</div>
+
+  </footer>
+  
+  <a id="rewind" href="javascript:void(0)">
+  <i class="fa fa-chevron-up fa-fw"></i>back to top
+</a>
+
+</body>
+</html>
+
+

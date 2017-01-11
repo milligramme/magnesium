@@ -1,0 +1,360 @@
+body {
+  margin: 0;
+  color: hsl(20, 10%, 20%);
+}
+a:link {
+  color: hsl(20, 10%, 60%);
+  text-decoration: none;
+}
+a:visited {
+  color: hsl(20, 20%, 50%);
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+a:active {
+  color: hsl(20, 10%, 20%);
+  text-decoration: overline;
+}
+
+code {
+  color: hsl(60, 50%, 25%);
+  background-color: hsl(60, 10%, 90%);
+  padding: 0 .5em;
+}
+
+blockquote {
+  border-left: 5px solid hsl(60, 10%, 20%);
+  background-color: hsl(60, 10%, 95%);
+  padding-left: 1em;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 320px;
+}
+
+/*base*//*base*//*base*/
+
+#layout {
+  max-width: 1024px;
+  margin: 0px auto;
+}
+
+
+
+
+/*
+  header
+*/
+header {
+  font-family: 'Lato', "Hiragino Kaku Gothic ProN", Meiryo, Helvetica, Arial, sans-serif;
+  margin: 0;
+  color: hsl(0, 0%, 20%);
+  padding: 0 .5em;
+  border-bottom: 1px solid hsl(0, 0%, 95%);
+}
+header > h1 {
+  font-size: 2em;
+  text-align: center;
+  line-height: 2em;
+  font-weight: 700;
+  margin: .2em 0;
+}
+header > h2 {
+  color: hsl(0, 0%, 80%);
+  text-align: center;
+  font-weight: 300;
+  padding: 0;
+  margin-top: 0;
+}
+
+/*
+  content
+*/
+#content {
+  margin: 0 auto;
+  padding: 1em .5em 0;
+  max-width: 960px;
+  margin-bottom: 50px;
+  line-height: 1.6em;
+}
+#content a {
+  text-decoration: underline;
+}
+#content h2 {
+  border-left: 8px solid hsl(320, 40%, 50%);
+  margin-top: 3em;
+  padding-left: 8px;
+}
+#content h3 {
+  border-left: 8px solid hsl(320, 40%, 70%);
+  margin-top: 2em;
+  padding-left: 8px;
+}
+#content h4 {
+  border-left: 16px solid hsl(320, 40%, 90%);
+  padding-left: 5px;
+}
+
+#content-main,
+#content-side,
+#content-bottom {
+  padding-top:10px;
+}
+
+/*
+  menu
+*/
+#brand {
+  background-color: hsl(20, 80%, 10%);
+  padding: 0;
+}
+#brand .brand {
+  font-family: 'Lato','sans-serif';
+  font-size: 1.6em;
+  font-weight: 400;
+  letter-spacing: .2em;
+  text-align: center;
+  text-transform: none;
+  text-decoration: none;
+  background: transparent;
+}
+
+#menu {
+  padding-left: 0;
+}
+@media (min-width: 64em) {
+  #menu {
+    padding-left: 1em;
+  }
+}
+#menu:focus:before,
+#menu:hover:before {
+  position: absolute;
+  font-family: FontAwesome;
+  content: "\f100\f0a6\f101";
+  color: hsl(0, 0%, 90%);
+  left: 0;
+}
+@media (min-width: 64em) {
+  #menu:focus:before,
+  #menu:hover:before {
+    content: "";
+  }
+}
+
+#search {
+  text-align: left;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+input#q {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#stat {
+  color: hsl(320, 100%, 50%);
+  font-size: .8em;
+}
+.search-results {
+  margin-bottom: 0;
+}
+
+
+#social {
+  margin: 1em;
+  padding: .5em;
+}
+#social div {
+  padding: .2em 0;
+}
+
+
+/*
+  article child
+*/
+article > footer {
+  text-align: right;
+  margin-bottom: 4em;
+}
+
+article > .summary {
+  color: hsl(0, 0%, 60%);
+  font-size: .8em;
+  padding: .5em 2em;
+}
+/*
+  summary
+*/
+h2.summary {
+  text-align: left;
+}
+p.summary {
+  overflow-wrap: break-word;
+}
+
+/*
+  body child
+*/
+body > footer {
+  background-color: hsl(20, 10%, 90%);
+  padding: 25px;
+}
+#copyrights {
+  line-height: 1.5em;
+  text-align: center;
+}
+
+/*
+  terms, indexes
+*/
+ul.list li {
+  margin: .6em 0;
+}
+ul.list li time{
+  margin-left: .3em;
+}
+
+.list-time {
+  font-size: .8em;
+  color: hsl(320, 50%, 50%);
+  margin-bottom: .2em;
+}
+/*
+  meta
+*/
+.post-meta {
+  padding: 0 .5em .5em 0;
+  font-size: .9em;
+}
+.post-meta div {
+  margin: .5em;
+}
+.post-meta a {
+  text-decoration: none;
+}
+
+/*
+  prev next
+*/
+.post-prev-next {
+  font-size: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.post-prev-next .prev {
+  float: left;
+  text-align: left;
+  overflow: hidden;
+}
+.post-prev-next .next {
+  float: right;
+  text-align: right;
+  overflow: hidden;
+}
+.post-prev-next a {
+  text-decoration: none;
+}
+
+/*
+  pagination
+*/
+.pagination {
+  font-size: 1em;
+  line-height: 2em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: hsl(20, 10%, 20%);
+}
+.pagination span {
+  padding: .2em;
+}
+.pagination span.current-page {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(320, 60%, 80%);
+}
+.pagination span a {
+  color: hsl(20, 10%, 60%);
+}
+
+/*
+  outdated
+*/
+.outdated {
+  background: hsl(320, 100%, 70%) url() repeat scroll top left;
+  color: hsl(0, 0%, 100%);
+  padding: 1em .2em;
+  text-align: center;
+}
+.outdated:before {
+  content: 'Outdated content';
+  font-weight: 700;
+}
+/*
+  draft
+*/
+.draft {
+  color: hsl(320, 100%, 70%);
+}
+
+
+#rewind {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(320, 100%, 70%);
+  padding: 5px 10px 5px;
+  position: fixed;
+  right: 0;
+  bottom: 72px;
+}
+
+/*
+sm  @media screen and (min-width: 35.5em)  ≥ 568px  .pure-u-sm-*
+md  @media screen and (min-width: 48em)  ≥ 768px  .pure-u-md-*
+lg  @media screen and (min-width: 64em)  ≥ 1024px  .pure-u-lg-*
+xl  @media screen and (min-width: 80em)  ≥ 1280px  .pure-u-xl-*
+*/
+@media (min-width: 35.5em) {
+  #content {
+    padding: 0 2em;
+  }
+  #layout {
+    left: 0;
+  }
+  #search {
+    text-align: right;
+  }
+
+  header {
+    padding: 0 2em;
+  }
+  header h1 {
+    color: hsl(180, 10%, 30%);
+    margin: 1em 0 .2em;
+    font-size: 2em;
+    font-weight: 700;
+  }
+  header h2 {
+    color: hsl(0, 0%, 80%);
+    font-weight: 300;
+    margin-top: 0;
+  }
+  .post-prev-next {
+    font-size: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  img {
+    max-width: 540px;
+  }
+  
+  
+}
+
