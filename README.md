@@ -1,5 +1,9 @@
 # Magnesium - [Hugo](//gohugo.io) Theme
 
+## Demo Page
+
+[https://milligramme.github.io/magnesium/](https://milligramme.github.io/magnesium/)
+
 ## Features
 
 - [Pure](http://purecss.io/) based
@@ -128,14 +132,14 @@ disqusShortname = "Your Disqus Shortname"
 {{% img src="images/image.jpg" caption="Referenced from wikipedia." href="https://en.wikipedia.org/wiki/Lorem_ipsum" %}}
 ```
 
-## Demo
+## Run ExampleSite
 
 ```
 $ cd themes/magnesium/exampleSite
 $ hugo server -D -w -t=../..
 ```
 
-## Development mode
+## Development Mode
 
 Supported development mode.
 
