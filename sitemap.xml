@@ -2,106 +2,106 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://github.com/milligramme/magnesium/post/creating-a-new-theme/</loc>
+    <loc>https://milligramme.github.io/magnesium/post/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://github.com/milligramme/magnesium/post/migrate-from-jekyll/</loc>
+    <loc>https://milligramme.github.io/magnesium/post/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://github.com/milligramme/magnesium/</loc>
+    <loc>https://milligramme.github.io/magnesium/</loc>
     <lastmod>2016-03-08T21:07:13+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://github.com/milligramme/magnesium/index.js</loc>
+    <loc>https://milligramme.github.io/magnesium/index.js</loc>
     <lastmod>2016-03-05T21:10:53+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://github.com/milligramme/magnesium/about/</loc>
+    <loc>https://milligramme.github.io/magnesium/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://github.com/milligramme/magnesium/post/goisforlovers/</loc>
+    <loc>https://milligramme.github.io/magnesium/post/goisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://github.com/milligramme/magnesium/post/hugoisforlovers/</loc>
+    <loc>https://milligramme.github.io/magnesium/post/hugoisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://github.com/milligramme/magnesium/categories/</loc>
+    <loc>https://milligramme.github.io/magnesium/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://github.com/milligramme/magnesium/categories/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://github.com/milligramme/magnesium/tags/development/</loc>
+    <loc>https://milligramme.github.io/magnesium/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://github.com/milligramme/magnesium/tags/go/</loc>
+    <loc>https://milligramme.github.io/magnesium/categories/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://github.com/milligramme/magnesium/categories/golang/</loc>
+    <loc>https://milligramme.github.io/magnesium/tags/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://github.com/milligramme/magnesium/tags/golang/</loc>
+    <loc>https://milligramme.github.io/magnesium/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://github.com/milligramme/magnesium/tags/hugo/</loc>
+    <loc>https://milligramme.github.io/magnesium/categories/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://github.com/milligramme/magnesium/</loc>
+    <loc>https://milligramme.github.io/magnesium/tags/hugo/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://milligramme.github.io/magnesium/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://github.com/milligramme/magnesium/post/</loc>
+    <loc>https://milligramme.github.io/magnesium/post/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://github.com/milligramme/magnesium/tags/</loc>
+    <loc>https://milligramme.github.io/magnesium/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://github.com/milligramme/magnesium/tags/templates/</loc>
+    <loc>https://milligramme.github.io/magnesium/tags/templates/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://github.com/milligramme/magnesium/tags/themes/</loc>
+    <loc>https://milligramme.github.io/magnesium/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
