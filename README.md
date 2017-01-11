@@ -8,6 +8,7 @@
 - Development Mode
 - No Humberger
 - Google Adsense (Optional)
+- Disqus Comment (Optional)
 
 ## Installation
 
