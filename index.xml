@@ -1345,6 +1345,33 @@ Liquid::Template.register_tag(&#39;image&#39;, Jekyll::ImageTag)
 &lt;p&gt;Have questions or suggestions? Feel free to &lt;a href=&#34;https://github.com/spf13/hugo/issues/new&#34;&gt;open an issue on GitHub&lt;/a&gt; or &lt;a href=&#34;https://twitter.com/spf13&#34;&gt;ask me on Twitter&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Thanks for reading!&lt;/p&gt;
+
+&lt;p&gt;&lt;figure&gt;
+  &lt;a href=&#34;https://milligramme.github.io/magnesium//images/chondrite-with-calcite-basic-magnesium-fluosil-1147327.jpg&#34; data-lightbox=&#34;roadtrip&#34; &gt;
+    &lt;img class=&#34;pure-img&#34; src=&#34;https://milligramme.github.io/magnesium//images/chondrite-with-calcite-basic-magnesium-fluosil-1147327.jpg&#34; alt=&#34;About /images/chondrite-with-calcite-basic-magnesium-fluosil-1147327.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+  &lt;figcaption&gt;
+    
+    &lt;a href=&#34;http://www.freeimages.com/photo/chondrite-with-calcite-basic-magnesium-fluosil-1147327&#34; target=&#34;_blank&#34;&gt;magnesium(link)&lt;/a&gt;
+    
+  &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;figure&gt;
+  &lt;a href=&#34;https://milligramme.github.io/magnesium//images/chondrite-with-calcite-basic-magnesium-fluosil-1147327.jpg&#34; data-lightbox=&#34;roadtrip&#34; &gt;
+    &lt;img class=&#34;pure-img&#34; src=&#34;https://milligramme.github.io/magnesium//images/chondrite-with-calcite-basic-magnesium-fluosil-1147327.jpg&#34; alt=&#34;About /images/chondrite-with-calcite-basic-magnesium-fluosil-1147327.jpg&#34;&gt;
+  &lt;/a&gt;
+  
+  &lt;figcaption&gt;
+    
+    magnesium
+    
+  &lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+&lt;/p&gt;
 </description>
     </item>
     
