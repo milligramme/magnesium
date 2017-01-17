@@ -1,5 +1,5 @@
 <figure{{ if .Get "class" }} class="{{ .Get "class" }}"{{ end }}>
-  <a href="{{ $.Site.BaseURL }}{{ .Get "src" }}">
+  <a href="{{ $.Site.BaseURL }}{{ .Get "src" }}" data-lightbox="roadtrip" >
     <img class="pure-img" src="{{ $.Site.BaseURL }}{{ .Get "src" }}" alt="{{ .Page.Title }} {{ .Get "src" }}">
   </a>
   {{ if .Get "caption" }}
