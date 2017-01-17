@@ -29,3 +29,6 @@ Some fun facts about [Hugo](http://gohugo.io/):
 Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/spf13/hugo/issues/new) or [ask me on Twitter](https://twitter.com/spf13).
 
 Thanks for reading!
+
+{{% img src="/images/chondrite-with-calcite-basic-magnesium-fluosil-1147327.jpg" caption="magnesium(link)" href="http://www.freeimages.com/photo/chondrite-with-calcite-basic-magnesium-fluosil-1147327" %}}
+{{% img src="/images/chondrite-with-calcite-basic-magnesium-fluosil-1147327.jpg" caption="magnesium" %}}
