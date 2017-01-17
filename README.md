@@ -9,6 +9,7 @@
 - [Pure](http://purecss.io/) based
 - [Font Awesome](http://fontawesome.io/) supported
 - [highlight\.js](https://highlightjs.org/) code highlight
+- [Lightbox](http://lokeshdhakar.com/projects/lightbox2/) lightbox image
 - Development Mode
 - No Humberger
 - Google Adsense (Optional)
@@ -131,6 +132,9 @@ disqusShortname = "Your Disqus Shortname"
 {{% img src="images/image.jpg" class="left" %}}
 {{% img src="images/image.jpg" caption="Referenced from wikipedia." href="https://en.wikipedia.org/wiki/Lorem_ipsum" %}}
 ```
+
+[Lightbox](http://lokeshdhakar.com/projects/lightbox2/) supported.
+By default `data-lightbox="roundtrip"` is set.
 
 ## Run ExampleSite
 
