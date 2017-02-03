@@ -9,10 +9,21 @@
   <title>Migrate to Hugo from Jekyll | Magnesium Demo</title>
   <meta name="author" content="milligramme">
   <meta name="description" content="">
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@github" />
-  <meta name="twitter:title" content="Magnesium Demo" />
-  <meta name="twitter:description" content="" />
+  
+  
+    <meta name="twitter:card" content="summary"/>
+  
+  <!-- Twitter Card data -->
+  
+  <meta name="twitter:title" content="Magnesium Demo | Migrate to Hugo from Jekyll"/>
+  
+  <meta name="twitter:site" content="@#"/>
+  
+  <meta name="twitter:description" content="Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &lt;root&gt;/ ▾ images/ logo.png  should become
+▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static."/>
+
+
   <link rel="stylesheet" href="https://milligramme.github.io/magnesium/css/normalize.css">
   <!-- Pure -->
   <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css">
