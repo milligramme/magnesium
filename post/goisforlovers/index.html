@@ -23,7 +23,7 @@
 This document is a brief primer on using go templates."/>
 
 
-  <link rel="stylesheet" href="https://milligramme.github.io/magnesium/css/normalize.css">
+  <link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/normalize.css">
   <!-- Pure -->
   <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css">
   <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
@@ -37,8 +37,8 @@ This document is a brief primer on using go templates."/>
   <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://milligramme.github.io/magnesium/css/magnesium.css">
-  <link rel="stylesheet" href="https://milligramme.github.io/magnesium/css/search.css">
+  <link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/magnesium.css">
+  <link rel="stylesheet" href="http://replace-this-with-your-hugo-site.com/css/search.css">
   <!-- jQuery -->
   <script
     src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -59,16 +59,29 @@ This document is a brief primer on using go templates."/>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/languages/haml.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   
-  <link href='https://milligramme.github.io/magnesium/favicon.png' rel='icon' type='image/png'>
-  <link href='https://milligramme.github.io/magnesium/favicon.png' rel='shortcut icon' type='image/png'>
-  <link href='https://milligramme.github.io/magnesium/apple-touch-icon-precomposed.png' rel='apple-touch-icon-precomposed'>
+  <link href='http://replace-this-with-your-hugo-site.com/favicon.png' rel='icon' type='image/png'>
+  <link href='http://replace-this-with-your-hugo-site.com/favicon.png' rel='shortcut icon' type='image/png'>
+  <link href='http://replace-this-with-your-hugo-site.com/apple-touch-icon-precomposed.png' rel='apple-touch-icon-precomposed'>
+  
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'Your Google Analytics tracking ID', 'auto');
+ga('send', 'pageview');
+</script>
+
+  
 </head>
 
 <body>
 <div class="pure-u-1 pure-u-sm-1 pure-u-md-1">
   <div id="brand" class="pure-menu pure-menu-horizontal pure-menu-scrollable">
     
-      <a class="pure-menu-link brand" href="https://milligramme.github.io/magnesium/">🔥:magnesium</a>
+      <a class="pure-menu-link brand" href="http://replace-this-with-your-hugo-site.com/">🔥:magnesium</a>
     
   </div>
 </div>
@@ -81,31 +94,31 @@ This document is a brief primer on using go templates."/>
         
         
           <li class="pure-menu-item">
-            <a class="pure-menu-link" href="https://milligramme.github.io/magnesium/"><i class='fa fa-home fa-fw'></i>home</a>
+            <a class="pure-menu-link" href="http://replace-this-with-your-hugo-site.com/"><i class='fa fa-home fa-fw'></i>home</a>
         
           </li>
         
         
           <li class="pure-menu-item">
-            <a class="pure-menu-link" href="https://milligramme.github.io/magnesium/post/"><i class='fa fa-file-text-o fa-fw'></i>posts</a>
+            <a class="pure-menu-link" href="http://replace-this-with-your-hugo-site.com/post/"><i class='fa fa-file-text-o fa-fw'></i>posts</a>
         
           </li>
         
         
           <li class="pure-menu-item">
-            <a class="pure-menu-link" href="https://milligramme.github.io/magnesium/categories/"><i class='fa fa-folder-o fa-fw'></i>categories</a>
+            <a class="pure-menu-link" href="http://replace-this-with-your-hugo-site.com/categories/"><i class='fa fa-folder-o fa-fw'></i>categories</a>
         
           </li>
         
         
           <li class="pure-menu-item">
-            <a class="pure-menu-link" href="https://milligramme.github.io/magnesium/tags/"><i class='fa fa-tags fa-fw'></i>tags</a>
+            <a class="pure-menu-link" href="http://replace-this-with-your-hugo-site.com/tags/"><i class='fa fa-tags fa-fw'></i>tags</a>
         
           </li>
         
         
           <li class="pure-menu-item">
-            <a class="pure-menu-link" href="https://milligramme.github.io/magnesium/about/"><i class='fa fa-smile-o fa-fw'></i>about</a>
+            <a class="pure-menu-link" href="http://replace-this-with-your-hugo-site.com/about/"><i class='fa fa-smile-o fa-fw'></i>about</a>
         
           </li>
         
@@ -157,19 +170,19 @@ This document is a brief primer on using go templates."/>
     <div>
       <i class="fa fa-tag fa-fw"></i>
       
-        <a class="post-taxonomy-tag" href="https://milligramme.github.io/magnesium/tags/go">go</a>
+        <a class="post-taxonomy-tag" href="http://replace-this-with-your-hugo-site.com/tags/go">go</a>
         &nbsp;&#124;
       
-        <a class="post-taxonomy-tag" href="https://milligramme.github.io/magnesium/tags/golang">golang</a>
+        <a class="post-taxonomy-tag" href="http://replace-this-with-your-hugo-site.com/tags/golang">golang</a>
         &nbsp;&#124;
       
-        <a class="post-taxonomy-tag" href="https://milligramme.github.io/magnesium/tags/templates">templates</a>
+        <a class="post-taxonomy-tag" href="http://replace-this-with-your-hugo-site.com/tags/templates">templates</a>
         &nbsp;&#124;
       
-        <a class="post-taxonomy-tag" href="https://milligramme.github.io/magnesium/tags/themes">themes</a>
+        <a class="post-taxonomy-tag" href="http://replace-this-with-your-hugo-site.com/tags/themes">themes</a>
         &nbsp;&#124;
       
-        <a class="post-taxonomy-tag" href="https://milligramme.github.io/magnesium/tags/development">development</a>
+        <a class="post-taxonomy-tag" href="http://replace-this-with-your-hugo-site.com/tags/development">development</a>
         
       
     </div>
@@ -182,10 +195,10 @@ This document is a brief primer on using go templates."/>
     <div>
       <i class="fa fa-folder-o fa-fw"></i>
       
-        <a class="post-taxonomy-categories" href="https://milligramme.github.io/magnesium/categories/development">Development</a>
+        <a class="post-taxonomy-categories" href="http://replace-this-with-your-hugo-site.com/categories/development">Development</a>
         &nbsp;&#124;
       
-        <a class="post-taxonomy-categories" href="https://milligramme.github.io/magnesium/categories/golang">golang</a>
+        <a class="post-taxonomy-categories" href="http://replace-this-with-your-hugo-site.com/categories/golang">golang</a>
         
       
     </div>
@@ -262,7 +275,7 @@ functions.</p>
 <p>Each go template has a struct (object) made available to it. In hugo each
 template is passed either a page or a node struct depending on which type of
 page you are rendering. More details are available on the
-<a href="https://milligramme.github.io/magnesium/layout/variables">variables</a> page.</p>
+<a href="http://replace-this-with-your-hugo-site.com/layout/variables">variables</a> page.</p>
 
 <p>A variable is accessed by referencing the variable name.</p>
 
@@ -279,7 +292,7 @@ page you are rendering. More details are available on the
 
 <p>Go template ship with a few functions which provide basic functionality. The go
 template system also provides a mechanism for applications to extend the
-available functions with their own. <a href="https://milligramme.github.io/magnesium/layout/functions">Hugo template
+available functions with their own. <a href="http://replace-this-with-your-hugo-site.com/layout/functions">Hugo template
 functions</a> provide some additional functionality we believe
 are useful for building websites. Functions are called by using their name
 followed by the required parameters separated by spaces. Template
@@ -467,7 +480,7 @@ you want to inside of your templates.</p>
 <h2 id="using-content-page-parameters">Using Content (page) Parameters</h2>
 
 <p>In each piece of content you can provide variables to be used by the
-templates. This happens in the <a href="https://milligramme.github.io/magnesium/content/front-matter">front matter</a>.</p>
+templates. This happens in the <a href="http://replace-this-with-your-hugo-site.com/content/front-matter">front matter</a>.</p>
 
 <p>An example of this is used in this documentation site. Most of the pages
 benefit from having the table of contents provided. Sometimes the TOC just
@@ -549,13 +562,13 @@ so, such as in this example:</p>
 <div class="post-prev-next pure-g">
   <div class="pure-u-1 pure-u-md-1-24" style="text-align: left;">
     
-    <a href="https://milligramme.github.io/magnesium/post/hugoisforlovers/"><i class="fa fa-angle-double-left"></i></a>
+    <a href="http://replace-this-with-your-hugo-site.com/post/hugoisforlovers/"><i class="fa fa-angle-double-left"></i></a>
     
   </div>
   <div class="pure-u-1 pure-u-md-10-24">
     
     <nav class="prev">
-      <a href="https://milligramme.github.io/magnesium/post/hugoisforlovers/">Getting Started with Hugo</a>
+      <a href="http://replace-this-with-your-hugo-site.com/post/hugoisforlovers/">Getting Started with Hugo</a>
     </nav>
     
   </div>
@@ -575,9 +588,9 @@ so, such as in this example:</p>
     <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'Your Disqus Shortname';
-    var disqus_identifier = 'https:\/\/milligramme.github.io\/magnesium\/post\/goisforlovers\/';
+    var disqus_identifier = 'http:\/\/replace-this-with-your-hugo-site.com\/post\/goisforlovers\/';
     var disqus_title = '(Hu)go Template Primer';
-    var disqus_url = 'https:\/\/milligramme.github.io\/magnesium\/post\/goisforlovers\/';
+    var disqus_url = 'http:\/\/replace-this-with-your-hugo-site.com\/post\/goisforlovers\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -763,23 +776,10 @@ so, such as in this example:</p>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js"></script>
   <script>lightbox.option({'resizeDuration': 200,'wrapAround': true});</script>
 
-  <script src="https://milligramme.github.io/magnesium/index.js" type="text/javascript" charset="utf-8"></script>
-  <script src="https://milligramme.github.io/magnesium/js/search.js" type="text/javascript" charset="utf-8"></script>
-  <script src="https://milligramme.github.io/magnesium/js/magnesium.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://replace-this-with-your-hugo-site.com/index.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://replace-this-with-your-hugo-site.com/js/search.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://replace-this-with-your-hugo-site.com/js/magnesium.js" type="text/javascript" charset="utf-8"></script>
   <footer>
-    
-      
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'Your Google Analytics tracking ID', 'auto');
-ga('send', 'pageview');
-</script>
-
-    
     <div id="copyrights">
   &copy; 2016. All rights reserved.<br/>
   Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a>
