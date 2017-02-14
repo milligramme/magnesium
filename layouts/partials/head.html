@@ -49,4 +49,7 @@
   <link href='/favicon.png' rel='icon' type='image/png'>
   <link href='/favicon.png' rel='shortcut icon' type='image/png'>
   <link href='/apple-touch-icon-precomposed.png' rel='apple-touch-icon-precomposed'>
+  {{ if ne (getenv "HUGO_ENV") "DEV" }}
+    {{ template "_internal/google_analytics.html" . }}
+  {{ end }}
 </head>
