@@ -9,10 +9,21 @@
   <title>Migrate to Hugo from Jekyll | Magnesium Demo</title>
   <meta name="author" content="milligramme">
   <meta name="description" content="">
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@github" />
-  <meta name="twitter:title" content="Magnesium Demo" />
-  <meta name="twitter:description" content="" />
+  
+  
+    <meta name="twitter:card" content="summary"/>
+  
+  <!-- Twitter Card data -->
+  
+  <meta name="twitter:title" content="Magnesium Demo | Migrate to Hugo from Jekyll"/>
+  
+  <meta name="twitter:site" content="@#"/>
+  
+  <meta name="twitter:description" content="Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &lt;root&gt;/ ▾ images/ logo.png  should become
+▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static."/>
+
+
   <link rel="stylesheet" href="https://milligramme.github.io/magnesium/css/normalize.css">
   <!-- Pure -->
   <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css">
@@ -52,6 +63,19 @@
   <link href='https://milligramme.github.io/magnesium/favicon.png' rel='icon' type='image/png'>
   <link href='https://milligramme.github.io/magnesium/favicon.png' rel='shortcut icon' type='image/png'>
   <link href='https://milligramme.github.io/magnesium/apple-touch-icon-precomposed.png' rel='apple-touch-icon-precomposed'>
+  
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'Your Google Analytics tracking ID', 'auto');
+ga('send', 'pageview');
+</script>
+
+  
 </head>
 
 <body>
@@ -551,19 +575,6 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
   <script src="https://milligramme.github.io/magnesium/js/search.js" type="text/javascript" charset="utf-8"></script>
   <script src="https://milligramme.github.io/magnesium/js/magnesium.js" type="text/javascript" charset="utf-8"></script>
   <footer>
-    
-      
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'Your Google Analytics tracking ID', 'auto');
-ga('send', 'pageview');
-</script>
-
-    
     <div id="copyrights">
   &copy; 2016. All rights reserved.<br/>
   Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a>
