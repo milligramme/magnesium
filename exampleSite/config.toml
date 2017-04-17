@@ -1,4 +1,4 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://milligramme.github.io/magnesium/"
 title = "Magnesium Demo"
 languageCode = "en-us"
 theme = "magnesium"
@@ -9,7 +9,7 @@ paginate = 3
 
 googleAnalytics = "Your Google Analytics tracking ID"
 disqusShortname = "Your Disqus Shortname"
-
+enableRobotsTXT = true
 
 [params]
   author = "milligramme"
