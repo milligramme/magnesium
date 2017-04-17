@@ -32,4 +32,12 @@ var data = [
       content: "[Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture. Save it somewhere specific as we will be using it in the next step. More complete instructions are available at installing hugo Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now. Follow the following steps: Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313 Corresponding pseudo commands: git clone https://github.com/spf13/hugo cd hugo /path/to/where/you/installed/hugo server --source=./docs &amp;gt; 29 pages created &amp;gt; 0 tags index created &amp;gt; in 27 ms &amp;gt; Web Server is available at http://localhost:1313 &amp;gt; Press ctrl&#43;c to stop Once you&amp;rsquo;ve gotten here, follow along the rest of this page on your local build. Step 3. Change the docs site Stop the Hugo process by hitting ctrl&#43;c. Now we are going to run hugo again, but this time with hugo in watch mode. /path/to/hugo/from/step/1/hugo server --source=./docs --watch &amp;gt; 29 pages created &amp;gt; 0 tags index created &amp;gt; in 27 ms &amp;gt; Web Server is available at http://localhost:1313 &amp;gt; Watching for changes in /Users/spf13/Code/hugo/docs/content &amp;gt; Press ctrl&#43;c to stop Open your favorite editor and change one of the source content pages. How about changing this very file to fix the typo. How about changing this very file to fix the typo. Content files are found in docs/content/. Unless otherwise specified, files are located at the same relative location as the url, in our case docs/content/overview/quickstart.md. Change and save this file.. Notice what happened in your terminal. &amp;gt; Change detected, rebuilding site &amp;gt; 29 pages created &amp;gt; 0 tags index created &amp;gt; in 26 ms Refresh the browser and observe that the typo is now fixed. Notice how quick that was. Try to refresh the site before it&amp;rsquo;s finished building.. I double dare you. Having nearly instant feedback enables you to have your creativity flow without waiting for long builds. Step 4. Have fun The best way to learn something is to play with it.]"
     }
   
+    ,
+    {
+      url: "https://milligramme.github.io/magnesium/post/",
+      title: "Posts",
+      date: "2014-04-02 ",
+      content: "[]"
+    }
+  
 ]

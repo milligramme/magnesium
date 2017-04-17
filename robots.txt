@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://milligramme.github.io/magnesium/sitemap.xml
